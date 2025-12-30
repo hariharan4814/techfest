@@ -106,9 +106,9 @@ const LoadingScreen = () => {
               />
             ))}
           </motion.span>
-        </motion.div>
-      </div>
-    </motion.div>
+        </motion.div >
+      </div >
+    </motion.div >
   );
 };
 

@@ -22,59 +22,37 @@ import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
 
-import { useState, useEffect } from "react";
-import { AnimatePresence } from "framer-motion";
-import LoadingScreen from "@/components/LoadingScreen";
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <ScrollToTop />
+        <div className="min-h-screen bg-background">
+          <ParticleBackground />
+          <FloatingShapes />
+          <ScrollProgress />
+          <Navbar />
+          <main className="pb-20 md:pb-0">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/events" element={<EventsPage />} />
+              <Route path="/events/:eventId" element={<EventDetailPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/register" element={<RegisterPage />} />
 
-const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <ScrollToTop />
-          <AnimatePresence>
-            {isLoading ? (
-              <LoadingScreen key="loading" />
-            ) : (
-              <div className="min-h-screen bg-background">
-                <ParticleBackground />
-                <FloatingShapes />
-                <ScrollProgress />
-                <Navbar />
-                <main className="pb-20 md:pb-0">
-                  <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/events" element={<EventsPage />} />
-                    <Route path="/events/:eventId" element={<EventDetailPage />} />
-                    <Route path="/about" element={<AboutPage />} />
-                    <Route path="/contact" element={<ContactPage />} />
-                    <Route path="/register" element={<RegisterPage />} />
-
-                    <Route path="*" element={<NotFound />} />
-                  </Routes>
-                </main>
-                <Footer />
-                <MobileBottomNav />
-                <BackToTop />
-              </div>
-            )}
-          </AnimatePresence>
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
-  );
-};
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
+          <Footer />
+          <MobileBottomNav />
+          <BackToTop />
+        </div>
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
 
 export default App;
