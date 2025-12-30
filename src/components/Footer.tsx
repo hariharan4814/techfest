@@ -48,6 +48,14 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm leading-relaxed">
               Celebrating innovation, technology, and talent. Join us for an unforgettable experience of learning, competition, and fun!
             </p>
+
+            <div className="pt-2">
+              <img
+                src="/iic-logo.png"
+                alt="Institution's Innovation Council"
+                className="h-14 md:h-16 w-auto object-contain bg-white/5 rounded-lg p-1"
+              />
+            </div>
           </div>
 
           {/* Quick Links */}
