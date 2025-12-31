@@ -1,3 +1,10 @@
+import digibytesImg from '../assets/events/digibytes.png';
+import adzapImg from '../assets/events/adzap.png';
+import techQuestImg from '../assets/events/tech-quest.png';
+import doodleImg from '../assets/events/doodle.png';
+import brainBattleImg from '../assets/events/brain-battle.png';
+import ideaConnectImg from '../assets/events/idea-connect.png';
+
 export interface Event {
   id: string;
   title: string;
@@ -24,7 +31,7 @@ export const events: Event[] = [
     title: "DIGI BYTES",
     category: "technical",
     timing: "10.00am to 03.00pm",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800",
+    image: digibytesImg,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     fullDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     rules: [
@@ -46,7 +53,7 @@ export const events: Event[] = [
     title: "ADZAP",
     category: "technical",
     timing: "10.00am to 03.00pm",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800",
+    image: adzapImg,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     fullDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     rules: [
@@ -68,7 +75,7 @@ export const events: Event[] = [
     title: "TECH QUEST",
     category: "technical",
     timing: "10.00am to 03.00pm",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800",
+    image: techQuestImg,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     fullDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     rules: [
@@ -90,7 +97,7 @@ export const events: Event[] = [
     title: "DOODLE",
     category: "non-technical",
     timing: "10.00am to 03.00pm",
-    image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800",
+    image: doodleImg,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     fullDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     rules: [
@@ -112,7 +119,7 @@ export const events: Event[] = [
     title: "BRAIN BATTLE",
     category: "non-technical",
     timing: "10.00am to 03.00pm",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800",
+    image: brainBattleImg,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     fullDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     rules: [
@@ -134,7 +141,7 @@ export const events: Event[] = [
     title: "IDEA CONNECT",
     category: "non-technical",
     timing: "10.00am to 03.00pm",
-    image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800",
+    image: ideaConnectImg,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     fullDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     rules: [
