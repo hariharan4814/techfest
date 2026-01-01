@@ -5,27 +5,41 @@ import SectionTitle from "@/components/SectionTitle";
 import NeonButton from "@/components/NeonButton";
 
 const ContactPage = () => {
-  const associationIncharges = [
+  const studentLeaders = [
     {
       name: "Hariharan B",
-      role: "Association Incharge",
+      role: "Association Chairperson",
       details: "M.Sc Computer Science",
       phone: "+91 99400 99083",
       whatsapp: "919940099083"
     },
     {
+      name: "Rohith S",
+      role: "IIC Champion",
+      details: "M.Sc Computer Science",
+      phone: "+91 99442 85073",
+      whatsapp: "919944285073"
+    },
+    {
       name: "Jai Aswatha T",
-      role: "Association Incharge",
+      role: "Association Chairperson",
       details: "M.Sc Computer Science",
       phone: "+91 80152 64749",
       whatsapp: "918015264749"
+    },
+    {
+      name: "Ramya A",
+      role: "IIC Champion",
+      details: "M.Sc Computer Science",
+      phone: "+91 93619 09557",
+      whatsapp: "919361909557"
     }
   ];
 
   const studentCoordinators = [
     {
       name: "Dhanasri S K",
-      role: "IIC Champion & Coordinator - Doodle",
+      role: "Coordinator - Doodle",
       details: "M.Sc Computer Science",
       phone: "+91 63749 14150",
       whatsapp: "916374914150"
@@ -67,13 +81,6 @@ const ContactPage = () => {
       whatsapp: "919361162892"
     },
     {
-      name: "Rohith S",
-      role: "IIC Champion",
-      details: "M.Sc Computer Science",
-      phone: "+91 99442 85073",
-      whatsapp: "919944285073"
-    },
-    {
       name: "Maheshkumar V",
       role: "Coordinator",
       details: "M.Sc Computer Science",
@@ -89,7 +96,7 @@ const ContactPage = () => {
     }
   ];
 
-  const ContactCard = ({ person, index }: { person: typeof associationIncharges[0], index: number }) => (
+  const ContactCard = ({ person, index }: { person: typeof studentLeaders[0], index: number }) => (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -158,7 +165,7 @@ const ContactPage = () => {
           subtitle="Get in touch with our team for any queries about Tech Fest"
         />
 
-        {/* Association Incharges Section */}
+        {/* Association Chairpersons & IIC Champions Section */}
         <div className="mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -166,11 +173,11 @@ const ContactPage = () => {
             viewport={{ once: true }}
             className="text-2xl font-orbitron font-bold text-center mb-8 text-primary"
           >
-            Association Incharges
+            Association Chairpersons & IIC Champions
           </motion.h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-            {associationIncharges.map((incharge, index) => (
-              <ContactCard key={incharge.name} person={incharge} index={index} />
+            {studentLeaders.map((leader, index) => (
+              <ContactCard key={leader.name} person={leader} index={index} />
             ))}
           </div>
         </div>
