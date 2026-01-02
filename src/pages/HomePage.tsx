@@ -34,6 +34,16 @@ const HomePage = () => {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
+            {/* College Name */}
+            <motion.h2
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan via-white to-neon-magenta mb-8 font-orbitron tracking-wider"
+            >
+              PSG College of Arts and Science
+            </motion.h2>
+
             {/* Animated Logo */}
             <motion.div
               initial={{ scale: 0, rotate: -180 }}
@@ -87,14 +97,7 @@ const HomePage = () => {
               Where Innovation Meets Celebration
             </motion.p>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-lg text-primary font-semibold mb-8"
-            >
-              PSG College of Arts and Science
-            </motion.p>
+
 
             {/* Countdown */}
             <motion.div
