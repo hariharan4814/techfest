@@ -60,8 +60,8 @@ const EventCard = ({ id, title, category, timing, image, description, index }: E
             <div className="absolute top-4 left-4">
               <span
                 className={`px-3 py-1 rounded-full text-xs font-orbitron font-semibold uppercase tracking-wider ${category === "technical"
-                    ? "bg-neon-cyan/20 text-neon-cyan border border-neon-cyan/30"
-                    : "bg-neon-magenta/20 text-neon-magenta border border-neon-magenta/30"
+                  ? "bg-neon-cyan/20 text-neon-cyan border border-neon-cyan/30"
+                  : "bg-neon-magenta/20 text-neon-magenta border border-neon-magenta/30"
                   }`}
               >
                 {category}
@@ -90,13 +90,18 @@ const EventCard = ({ id, title, category, timing, image, description, index }: E
                 </span>
               </div>
 
-              <motion.span
-                className="flex items-center gap-1 text-sm font-medium text-primary"
-                whileHover={{ x: 5 }}
+              <motion.div
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 border border-primary/50 text-sm font-bold text-primary shadow-[0_0_10px_rgba(0,255,255,0.2)]"
+                whileHover={{
+                  scale: 1.05,
+                  backgroundColor: "rgba(0, 255, 255, 0.2)",
+                  boxShadow: "0 0 20px rgba(0, 255, 255, 0.4)"
+                }}
+                whileTap={{ scale: 0.95 }}
               >
                 View Details
                 <ArrowRight size={16} />
-              </motion.span>
+              </motion.div>
             </div>
           </div>
 

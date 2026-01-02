@@ -118,7 +118,7 @@ const EventDetailPage = () => {
                 <FileText className="text-primary" size={24} />
                 About This Event
               </h2>
-              <p className="text-muted-foreground leading-relaxed text-lg">
+              <p className="text-muted-foreground leading-relaxed text-lg whitespace-pre-wrap">
                 {event.fullDescription}
               </p>
             </motion.section>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Home, Calendar, Info, Phone, UserPlus } from "lucide-react";
+import { Home, Calendar, Info, Phone, UserPlus, Clock } from "lucide-react";
 
 interface Ripple {
   x: number;
@@ -41,6 +41,7 @@ const MobileBottomNav = () => {
   const navItems = [
     { path: "/", icon: Home, label: "Home" },
     { path: "/events", icon: Calendar, label: "Events" },
+    { path: "/schedule", icon: Clock, label: "Schedule" },
 
     { path: "/about", icon: Info, label: "About" },
     { path: "/contact", icon: Phone, label: "Contact" },
