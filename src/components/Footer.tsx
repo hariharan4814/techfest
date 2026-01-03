@@ -116,7 +116,7 @@ const Footer = () => {
                 className="flex items-center gap-3 px-4 py-3 rounded-lg border-glow-cyan bg-card/50 text-sm font-medium text-primary hover:bg-primary/10 transition-colors"
               >
                 <Download size={18} />
-                <span>Download Brochure</span>
+                <span>Download Brochure (13 MB)</span>
               </motion.a>
               <motion.a
                 href="/Invitation.pdf"

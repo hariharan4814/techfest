@@ -113,7 +113,7 @@ const EventsPage = () => {
                 className="flex items-center gap-3 px-5 py-3 rounded-xl border-glow-cyan bg-card/50 text-sm font-medium text-primary hover:bg-primary/10 transition-colors w-full sm:w-auto justify-center"
               >
                 <Download size={18} />
-                <span>Brochure</span>
+                <span>Brochure (13 MB)</span>
               </motion.a>
               <motion.a
                 href="/Invitation.pdf"

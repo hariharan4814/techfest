@@ -230,7 +230,7 @@ const HomePage = () => {
                 <Download size={28} className="text-neon-cyan" />
                 <div className="text-left">
                   <p className="font-orbitron font-bold text-lg text-foreground">Download Brochure</p>
-                  <p className="text-sm text-muted-foreground">PDF, 2.5 MB</p>
+                  <p className="text-sm text-muted-foreground">PDF, 13 MB</p>
                 </div>
               </div>
             </motion.a>
